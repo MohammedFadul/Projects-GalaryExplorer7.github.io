@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Roboto Thin;
+}
+
+
+
+h1{
+font-size: 40px;
+text-align: center;
+margin-top: 120px;
+}
+
+.cont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+        
+}
+
+/* Meadia Query */
+
+@media(max-width:767px){
+    .cont{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .cont img{
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+  }
+
+   

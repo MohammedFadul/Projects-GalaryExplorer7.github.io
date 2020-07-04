@@ -1,0 +1,469 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(24, 21, 21);
+    width: 100%;
+    height:100vh;
+    position: relative;
+  
+    /* height:2000px; */
+}
+
+/* Start header */
+
+header{
+    width: 100%;
+    padding: 0 20px;
+    height: 200px;
+    background: rgb(255, 255, 255);
+ 
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .line{
+    width: 20px;
+    height: 130px;
+    background-color: rgb(248, 19, 57);
+    position: absolute;
+    top: 0;
+    left: 10%; 
+}
+
+header .line .logo{
+
+    margin-left: 50px;
+    margin-top: -10px;
+}
+
+header .signup a  {
+text-decoration: none;
+font-size: 25px;
+color:rgb(248, 19, 57);
+float: right;
+padding-top: 50px;
+padding-right: 100px;
+font-family: Roboto Thin;
+outline: none;
+}
+
+/*End Header */
+
+
+/* Strart sub_header */
+
+.sub_header{
+    width: 70%;
+    height: 70px;
+    margin: 0 auto;
+    background-color: rgb(29, 26, 26);
+    box-shadow: 5px 5px 6px black;
+    z-index: 1;
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+   
+}
+.sub_header nav{
+    width: 100%;
+    height: 70px;
+}
+
+.sub_header nav ul{
+    list-style: none;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sub_header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: Roboto Thin;
+    font-size:1.2rem;
+    color: white;
+    transition: all ease-in-out .3s;
+}
+
+.sub_header nav ul li a:hover{
+ color: rgb(248, 19, 57);
+}
+
+/* End Sub_heder */
+
+/* Start Rows */
+
+.row{
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    
+}
+
+.row .img img{
+    width:550px;
+    height: 370px;
+    border: solid 1px rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* End Rows */
+
+
+/* Start Pasge slider */
+
+.p-slider{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+
+.p-slider .p {
+    width: 40px;
+    height: 40px;
+    background: rgb(248, 19, 57);
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+    margin: 0 -120px;
+    border-radius: 30px;
+}
+
+.p-slider .p:hover{
+    background: rgb(153, 1, 26);
+}
+
+
+.p-slider .p p {
+color: white;
+font-size: 18px;    
+line-height: 40px;
+}
+.p-slider .active{
+    background:rgb(153, 1, 26);
+}
+
+
+/* End Page slider */
+
+
+/* Start Footer */
+
+.footer{
+    width:100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-top: 70px;
+    height: 300px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li{
+    margin : 20px 0;
+}
+
+.footer ul li a {
+    margin: 20px 0;
+    font-size: 20px;
+    font-family: Roboto Thin;
+    color:rgb(248, 19, 57);
+}
+
+/*End Footer*/
+
+/* Start main Footer */
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(29, 26, 26);
+    display: flex;  
+    justify-content: center;
+}
+
+footer p {
+    color: white;
+    font-family: Roboto Thin;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+/* End Main Footer*/
+
+
+/*Start Clicked Page */
+
+body .click-page{
+    background: rgba(0, 0,0,.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 10000;
+    transition: all ease-in-out .3s;
+
+}
+
+.click-page .card1{
+    width: 100%;
+    max-width: 700px;
+    height: 520px;
+    /* background: rgb(226, 224, 224);   */
+    /* position: relative; */
+    
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.click-page .card1 .close span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    color: rgb(248, 19, 57);
+
+}
+
+.icard{
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 40px;
+      
+      
+  }
+  
+
+
+
+.card1 img{
+  max-width: 100%;
+  max-height: 400px;
+  width: 100%;
+}
+/* End Clicke Page */
+
+header .phone-list{
+    display: none ;
+    
+}
+
+
+/* Media Query */
+
+@media (max-width : 767px){
+  header  .signup a {
+      display: none;
+  }
+  header {
+      padding: 0;
+  }
+
+  header .line{
+      width: 10px;
+      height: 200px;
+  }
+  header .line .logo img{
+      width: 200px;
+      margin-top: 50px;
+      margin-left:-20px
+  }
+
+  header .line{
+      position: absolute;
+      top:0;
+      left: 0;
+  }
+
+  header .phone-list-button{
+      z-index: 100;
+      width: 40px;
+      height: 40px;
+      background: rgb(24, 21, 21);
+      /* float: right; */
+      /* margin: 20px; */
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      /* border-radius: 3px; */
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  header .phone-list-button span{
+     width: 30px;
+     height:2px;
+     margin: 8px;
+     background-color: white;
+     display: block;
+     border-radius: 5px;
+  }
+
+  .sub_header{
+      display: none;
+  }
+
+  .row {
+      margin-top: 40px;
+  }
+  .row img {
+      margin-top: 20px;
+  }
+
+  .p-slider{
+      width: 90%;
+  }
+
+.p-slider .p{
+    margin: 0 -35px;
+   
+}
+
+ .row .img img{
+    width:300px;
+    height: 200px;
+    border: solid 1px rgb(255, 255, 255);
+    cursor: pointer;
+
+}
+
+.row {
+    margin:0 auto;
+}
+
+.footer .row-1 ul li a,
+.footer .row-2 ul li a{
+    font-size: 20px;
+} 
+.footer {
+    display: block;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.icard{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+  header .phone-list{
+      
+      background: rgb(24, 21, 21);
+      width: 100%;
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+      transform: translateX(-100%);
+      justify-content: center;
+      position: fixed; 
+      transition: all ease-in-out .3s;
+      display: flex;
+    
+  }
+
+
+  .open .phone-list{
+      transform: translateX(0);
+     
+  }
+
+
+  
+  header .phone-list ul{
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      
+  }
+  header .phone-list ul li {
+      margin: 20px 0;
+  }
+
+  header .phone-list ul li a{
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      font-family:Roboto Thin;
+      transition: all ease-in-out .2s;
+      
+  }
+
+  header .phone-list ul li a:hover{
+      color: rgb(248, 19, 57);
+
+  }
+
+  
+  
+}
+
+@media(min-width:768px) and (max-width:1160px){
+    header .line{
+        left: 2%;
+    }
+
+    header .signup a {
+        padding-right: 10px;
+    }
+
+    .row{
+        margin: 0 auto;
+        margin-top: 40px;
+    
+    }
+    .row img{
+        margin-top: 30px;   
+    }
+
+   .row .img img{
+       width: 600px;
+   }
+
+    .p-slider {
+        width: 50%;
+    }
+    .p-slider .p{
+        margin: 0 -80px; 
+    }
+
+    .sub_header{
+        width: 100%;
+    }
+
+    .footer .row-1 a,
+    .footer .row-2 a{
+        font-size: 16px;
+    }
+}

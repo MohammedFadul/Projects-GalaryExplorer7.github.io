@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="415" height="199" viewBox="0 0 415 199">
+  <defs>
+    <rect id="rect-1" width="415" height="199" x="0" y="0"/>
+    <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="415" height="199" x="0" y="0" fill="black"/>
+      <use fill="white" xlink:href="#rect-1"/>
+    </mask>
+  </defs>
+  <g>
+    <use fill="none" xlink:href="#rect-1"/>
+    <g mask="url(#mask-2)">
+      <text font-size="0" style="white-space:pre">
+        <tspan x="0" y="114" fill="rgb(0,0,0)" font-family="Roboto Thin" font-size="90" font-weight="250" style="white-space:pre;text-transform:none">GALARY </tspan>
+      </text>
+      <text font-size="0" style="white-space:pre">
+        <tspan x="321" y="157" fill="rgb(221,144,92)" font-family="Roboto Thin" font-size="170" font-weight="250" style="white-space:pre;text-transform:none">7</tspan>
+      </text>
+      <text font-size="0" style="white-space:pre">
+        <tspan x="9" y="172" fill="rgb(221,144,92)" font-family="Roboto Thin" font-size="65" font-weight="250" style="white-space:pre;text-transform:none">EXPLORER</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
