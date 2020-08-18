@@ -5,28 +5,21 @@
     font-family: Roboto Thin;
 }
 
-body{
-    background: url('../images/2.jpg') no-repeat center;
-    width: 100%;
-    height: 900px ;
-
-}
-
 .cont{
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, .6);
+    height: 100vh;
+    background: url('../images/2.jpg') center no-repeat;
+    background-size: cover;
 }
-.cont .logo {
-    text-align: center;
+.overlay{
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 100px;
 }
 
-.cont .signup{
-    margin-top: 20px;
-    width: 100%;
-    height: 600px;
-    background: rgba(0, 0, 0, 0.7);
-    margin:0 auto;
+.cont .logo {
+    text-align: center;
 }
 
 .cont .signup h2{
@@ -34,11 +27,6 @@ body{
     color: white;
     font-size: 40px;
     padding: 15px 0;
-}
-.cont .signup form{
-    width: 100%;
-    text-align: center;
-    margin-top: 40px;
 }
 
 .cont form input{
@@ -52,35 +40,60 @@ body{
     border: none;
     background:black;
 }
-
-.cont form input[type='submit']{
-    width: 15%;
-    padding: 15px;
+.cont{
+    padding-bottom: 100px;
+}
+.cont .signdev{
+   text-align: center;
+   padding-bottom: 50px;
+}
+.cont input[type='submit']{
+    padding: 15px 30px;
     cursor: pointer;
     color: black;
     background: rgb(255, 251, 251);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold; 
 }
+
+
+
 
 
 
 /* Media Query */
 
 @media (max-width:767px){
+
+    form{
+        padding-bottom: 0;
+    }
     .cont .signup{
         width: 100%;
     }
     
-
     .cont form input{
-        width: 100%;
-     
+        width: 80%; 
     }
-
+    .logo img{
+        width: 200px;
+    }
 
     .cont form input[type='submit']{
         width: 30%;
      
     }
 
+}
 
+@media(min-width:768px) and (max-width:991px){
+    .cont{
+        height: 100%;
+    }
+
+    .logo{
+        padding-top: 150px;
+    }
 }
